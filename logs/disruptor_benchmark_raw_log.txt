@@ -1,0 +1,302 @@
+Executing ':disruptor:DisruptorBenchmark.main()'...
+
+> Task :disruptor:compileJava
+> Task :disruptor:processResources NO-SOURCE
+> Task :disruptor:classes
+
+> Task :disruptor:DisruptorBenchmark.main()
+# JMH version: 1.37
+# VM version: JDK 21.0.4, Java HotSpot(TM) 64-Bit Server VM, 21.0.4+8-LTS-274
+# VM invoker: C:\Program Files\Java\jdk-21\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.khanhbq.disruptor.benchmark.DisruptorBenchmark.sendMessages
+# Parameters: (bufferSize = 1024, waitStrategyName = BlockingWaitStrategy, workHandlerSize = 1)
+
+# Run progress: 0.00% complete, ETA 00:45:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 746507.614 ops/s
+# Warmup Iteration   2: 629466.166 ops/s
+# Warmup Iteration   3: 601708.333 ops/s
+# Warmup Iteration   4: 739507.964 ops/s
+# Warmup Iteration   5: 827905.600 ops/s
+Iteration   1: 1098061.338 ops/s
+Iteration   2: 1036341.650 ops/s
+Iteration   3: 652390.464 ops/s
+Iteration   4: 1066910.248 ops/s
+Iteration   5: 998114.860 ops/s
+
+
+Result "com.khanhbq.disruptor.benchmark.DisruptorBenchmark.sendMessages":
+  970363.712 �(99.9%) 699128.171 ops/s [Average]
+  (min, avg, max) = (652390.464, 970363.712, 1098061.338), stdev = 181561.366
+  CI (99.9%): [271235.541, 1669491.883] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.4, Java HotSpot(TM) 64-Bit Server VM, 21.0.4+8-LTS-274
+# VM invoker: C:\Program Files\Java\jdk-21\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.khanhbq.disruptor.benchmark.DisruptorBenchmark.sendMessages
+# Parameters: (bufferSize = 1024, waitStrategyName = BlockingWaitStrategy, workHandlerSize = 10)
+
+# Run progress: 3.70% complete, ETA 00:43:33
+# Fork: 1 of 1
+# Warmup Iteration   1: 86954.857 ops/s
+# Warmup Iteration   2: 73587.239 ops/s
+# Warmup Iteration   3: 70878.769 ops/s
+# Warmup Iteration   4: 72353.903 ops/s
+# Warmup Iteration   5: 71375.438 ops/s
+Iteration   1: 72427.376 ops/s
+Iteration   2: 69060.421 ops/s
+Iteration   3: 67446.576 ops/s
+Iteration   4: 67182.771 ops/s
+Iteration   5: 67000.880 ops/s
+
+
+Result "com.khanhbq.disruptor.benchmark.DisruptorBenchmark.sendMessages":
+  68623.605 �(99.9%) 8771.129 ops/s [Average]
+  (min, avg, max) = (67000.880, 68623.605, 72427.376), stdev = 2277.834
+  CI (99.9%): [59852.476, 77394.734] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.4, Java HotSpot(TM) 64-Bit Server VM, 21.0.4+8-LTS-274
+# VM invoker: C:\Program Files\Java\jdk-21\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.khanhbq.disruptor.benchmark.DisruptorBenchmark.sendMessages
+# Parameters: (bufferSize = 1024, waitStrategyName = BlockingWaitStrategy, workHandlerSize = 100)
+
+# Run progress: 7.41% complete, ETA 00:41:55
+# Fork: 1 of 1
+# Warmup Iteration   1: 77313.908 ops/s
+# Warmup Iteration   2: 77356.345 ops/s
+# Warmup Iteration   3: 76815.791 ops/s
+# Warmup Iteration   4: 84743.669 ops/s
+# Warmup Iteration   5: 81163.676 ops/s
+Iteration   1: 79596.054 ops/s
+Iteration   2: 82128.634 ops/s
+Iteration   3: 80665.947 ops/s
+Iteration   4: 84225.610 ops/s
+Iteration   5: 77961.357 ops/s
+
+
+Result "com.khanhbq.disruptor.benchmark.DisruptorBenchmark.sendMessages":
+  80915.520 �(99.9%) 9225.225 ops/s [Average]
+  (min, avg, max) = (77961.357, 80915.520, 84225.610), stdev = 2395.762
+  CI (99.9%): [71690.295, 90140.745] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.4, Java HotSpot(TM) 64-Bit Server VM, 21.0.4+8-LTS-274
+# VM invoker: C:\Program Files\Java\jdk-21\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.khanhbq.disruptor.benchmark.DisruptorBenchmark.sendMessages
+# Parameters: (bufferSize = 1024, waitStrategyName = SleepingWaitStrategy, workHandlerSize = 1)
+
+# Run progress: 11.11% complete, ETA 00:40:15
+# Fork: 1 of 1
+# Warmup Iteration   1: 140297.335 ops/s
+# Warmup Iteration   2: 114121.089 ops/s
+# Warmup Iteration   3: 174698.601 ops/s
+# Warmup Iteration   4: 91061.106 ops/s
+# Warmup Iteration   5: 96863.033 ops/s
+Iteration   1: 161772.969 ops/s
+Iteration   2: 146928.824 ops/s
+Iteration   3: 89947.397 ops/s
+Iteration   4: 131304.215 ops/s
+Iteration   5: 104404.057 ops/s
+
+
+Result "com.khanhbq.disruptor.benchmark.DisruptorBenchmark.sendMessages":
+  126871.492 �(99.9%) 114037.473 ops/s [Average]
+  (min, avg, max) = (89947.397, 126871.492, 161772.969), stdev = 29615.169
+  CI (99.9%): [12834.020, 240908.965] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.4, Java HotSpot(TM) 64-Bit Server VM, 21.0.4+8-LTS-274
+# VM invoker: C:\Program Files\Java\jdk-21\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.khanhbq.disruptor.benchmark.DisruptorBenchmark.sendMessages
+# Parameters: (bufferSize = 1024, waitStrategyName = SleepingWaitStrategy, workHandlerSize = 10)
+
+# Run progress: 14.81% complete, ETA 00:38:36
+# Fork: 1 of 1
+# Warmup Iteration   1: 49289.975 ops/s
+# Warmup Iteration   2: 48997.145 ops/s
+# Warmup Iteration   3: 50674.131 ops/s
+# Warmup Iteration   4: 49093.409 ops/s
+# Warmup Iteration   5: 52146.862 ops/s
+Iteration   1: 54168.735 ops/s
+Iteration   2: 50091.977 ops/s
+Iteration   3: 47407.127 ops/s
+Iteration   4: 49795.075 ops/s
+Iteration   5: 49633.064 ops/s
+
+
+Result "com.khanhbq.disruptor.benchmark.DisruptorBenchmark.sendMessages":
+  50219.196 �(99.9%) 9441.187 ops/s [Average]
+  (min, avg, max) = (47407.127, 50219.196, 54168.735), stdev = 2451.846
+  CI (99.9%): [40778.009, 59660.383] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.4, Java HotSpot(TM) 64-Bit Server VM, 21.0.4+8-LTS-274
+# VM invoker: C:\Program Files\Java\jdk-21\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.khanhbq.disruptor.benchmark.DisruptorBenchmark.sendMessages
+# Parameters: (bufferSize = 1024, waitStrategyName = SleepingWaitStrategy, workHandlerSize = 100)
+
+# Run progress: 18.52% complete, ETA 00:36:55
+# Fork: 1 of 1
+# Warmup Iteration   1: 35922.067 ops/s
+# Warmup Iteration   2: 36740.338 ops/s
+# Warmup Iteration   3: 36715.768 ops/s
+# Warmup Iteration   4: 38000.397 ops/s
+# Warmup Iteration   5: 36594.552 ops/s
+Iteration   1: 36009.759 ops/s
+Iteration   2: 37650.871 ops/s
+Iteration   3: 37200.835 ops/s
+Iteration   4: 37258.048 ops/s
+Iteration   5: 35249.719 ops/s
+
+
+Result "com.khanhbq.disruptor.benchmark.DisruptorBenchmark.sendMessages":
+  36673.846 �(99.9%) 3871.160 ops/s [Average]
+  (min, avg, max) = (35249.719, 36673.846, 37650.871), stdev = 1005.328
+  CI (99.9%): [32802.687, 40545.006] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.4, Java HotSpot(TM) 64-Bit Server VM, 21.0.4+8-LTS-274
+# VM invoker: C:\Program Files\Java\jdk-21\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.khanhbq.disruptor.benchmark.DisruptorBenchmark.sendMessages
+# Parameters: (bufferSize = 1024, waitStrategyName = YieldingWaitStrategy, workHandlerSize = 1)
+
+# Run progress: 22.22% complete, ETA 00:35:15
+# Fork: 1 of 1
+# Warmup Iteration   1: 260025.979 ops/s
+# Warmup Iteration   2: 196457.370 ops/s
+# Warmup Iteration   3: 153676.095 ops/s
+# Warmup Iteration   4: 199756.280 ops/s
+# Warmup Iteration   5: 170720.965 ops/s
+Iteration   1: 177141.265 ops/s
+Iteration   2: 171185.280 ops/s
+Iteration   3: 186567.030 ops/s
+Iteration   4: 221057.868 ops/s
+Iteration   5: 159541.249 ops/s
+
+
+Result "com.khanhbq.disruptor.benchmark.DisruptorBenchmark.sendMessages":
+  183098.539 �(99.9%) 90003.434 ops/s [Average]
+  (min, avg, max) = (159541.249, 183098.539, 221057.868), stdev = 23373.606
+  CI (99.9%): [93095.104, 273101.973] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.4, Java HotSpot(TM) 64-Bit Server VM, 21.0.4+8-LTS-274
+# VM invoker: C:\Program Files\Java\jdk-21\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.khanhbq.disruptor.benchmark.DisruptorBenchmark.sendMessages
+# Parameters: (bufferSize = 1024, waitStrategyName = YieldingWaitStrategy, workHandlerSize = 10)
+
+# Run progress: 25.93% complete, ETA 00:33:34
+# Fork: 1 of 1
+# Warmup Iteration   1: 65344.472 ops/s
+# Warmup Iteration   2: 64872.294 ops/s
+# Warmup Iteration   3: 65349.158 ops/s
+# Warmup Iteration   4: 65020.646 ops/s
+# Warmup Iteration   5: 65043.361 ops/s
+Iteration   1: 64996.339 ops/s
+Iteration   2: 65187.054 ops/s
+Iteration   3: 64814.271 ops/s
+Iteration   4: 65069.310 ops/s
+Iteration   5: 65081.962 ops/s
+
+
+Result "com.khanhbq.disruptor.benchmark.DisruptorBenchmark.sendMessages":
+  65029.787 �(99.9%) 532.807 ops/s [Average]
+  (min, avg, max) = (64814.271, 65029.787, 65187.054), stdev = 138.368
+  CI (99.9%): [64496.981, 65562.594] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.4, Java HotSpot(TM) 64-Bit Server VM, 21.0.4+8-LTS-274
+# VM invoker: C:\Program Files\Java\jdk-21\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.khanhbq.disruptor.benchmark.DisruptorBenchmark.sendMessages
+# Parameters: (bufferSize = 1024, waitStrategyName = YieldingWaitStrategy, workHandlerSize = 100)
+
+# Run progress: 29.63% complete, ETA 00:31:53
+# Fork: 1 of 1
+# Warmup Iteration   1: 64940.105 ops/s
+# Warmup Iteration   2: 64748.827 ops/s
+# Warmup Iteration   3: 64837.573 ops/s
+# Warmup Iteration   4: 64702.742 ops/s
+# Warmup Iteration   5: 64935.149 ops/s
+Iteration   1: 64853.868 ops/s
+Iteration   2: 64912.966 ops/s
+Iteration   3: 64849.464 ops/s
+Iteration   4: 64908.672 ops/s
+Iteration   5: 64782.413 ops/s
+
+
+Result "com.khanhbq.disruptor.benchmark.DisruptorBenchmark.sendMessages":
+  64861.477 �(99.9%) 204.953 ops/s [Average]
+  (min, avg, max) = (64782.413, 64861.477, 64912.966), stdev = 53.226
+  CI (99.9%): [64656.524, 65066.429] (assumes normal distribution)

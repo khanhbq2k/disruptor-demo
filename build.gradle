@@ -15,16 +15,46 @@ repositories {
 dependencies {
 
     implementation project(':disruptor')
-    implementation project(':blocking-queue')
-
-    implementation 'org.apache.kafka:kafka-clients:3.2.0'
-    implementation 'com.lmax:disruptor:3.4.4'
-
-    implementation 'org.slf4j:slf4j-simple:1.7.36'
 
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
+
+
+allprojects {
+    apply plugin: "java"
+
+    repositories {
+        mavenCentral()
+    }
+
+    compileJava { options.encoding = "UTF-8" }
+
+    dependencies {
+
+        implementation 'org.apache.kafka:kafka-clients:3.2.0'
+        implementation 'com.lmax:disruptor:3.4.4'
+
+        implementation 'org.slf4j:slf4j-simple:1.7.36'
+
+        compileOnly 'org.projectlombok:lombok:1.18.34'
+        annotationProcessor 'org.projectlombok:lombok:1.18.34'
+
+        testCompileOnly 'org.projectlombok:lombok:1.18.34'
+        testAnnotationProcessor 'org.projectlombok:lombok:1.18.34'
+
+        implementation 'org.openjdk.jmh:jmh-core:1.37'
+        annotationProcessor 'org.openjdk.jmh:jmh-generator-annprocess:1.37'
+
+        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}
+
 
 test {
     useJUnitPlatform()

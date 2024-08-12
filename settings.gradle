@@ -1,4 +1,3 @@
 rootProject.name = 'disruptor-demo'
 include 'disruptor'
-include 'blocking-queue'
 
