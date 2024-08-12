@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.khanhbq'
+version = '1.0-SNAPSHOT'
+
+sourceCompatibility = 21
+targetCompatibility = 21
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation project(':disruptor')
+    implementation project(':blocking-queue')
+
+    implementation 'org.apache.kafka:kafka-clients:3.2.0'
+    implementation 'com.lmax:disruptor:3.4.4'
+
+    implementation 'org.slf4j:slf4j-simple:1.7.36'
+
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
